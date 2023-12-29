@@ -47,6 +47,10 @@ public class ReflectionExperiment {
             Method method = d.getDeclaredMethod("getA");
             System.out.println("Specific Declared Method: " + method.toString());
 
+            Method methodWithParams = d.getDeclaredMethod("setA", double.class);
+            System.out.println(
+                    "Specific Declared Method with Parameters of DoubleClass: " + methodWithParams.toString());
+
         } catch (Exception e) {
             e.printStackTrace();
         }
