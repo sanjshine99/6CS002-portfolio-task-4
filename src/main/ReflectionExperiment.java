@@ -9,6 +9,8 @@ public class ReflectionExperiment {
 
             Class<?> c2 = Class.forName("DoubleClass");
             System.out.println("Class Loaded with forName " + c2.getName());
+
+            System.out.println("Is Interface: " + c.isInterface());
         } catch (Exception e) {
             e.printStackTrace();
         }
