@@ -44,6 +44,9 @@ public class ReflectionExperiment {
                 System.out.println(constructor.toString());
             }
 
+            Method method = d.getDeclaredMethod("getA");
+            System.out.println("Specific Declared Method: " + method.toString());
+
         } catch (Exception e) {
             e.printStackTrace();
         }
