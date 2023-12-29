@@ -11,6 +11,8 @@ public class ReflectionExperiment {
             System.out.println("Class Loaded with forName " + c2.getName());
 
             System.out.println("Is Interface: " + c.isInterface());
+
+            System.out.println("Is Array: " + c.isArray());
         } catch (Exception e) {
             e.printStackTrace();
         }
