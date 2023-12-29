@@ -32,6 +32,12 @@ public class ReflectionExperiment {
                 System.out.println(field.toString());
             }
 
+            Method[] methods = d.getDeclaredMethods();
+            System.out.println("Declared Methods of DoubleClass: ");
+            for (Method method : methods) {
+                System.out.println(method.toString());
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
